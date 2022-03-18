@@ -35,7 +35,7 @@ bash run.sh
 
 The bash script performs the following:
 - Compiles and runs `maze_gen`. 
-- Compiles the robot source codes through make
+- Compiles the robot source codes through `make`
 - Starts Enviro 
 
 ## Usage:
