@@ -174,7 +174,7 @@ int main(){
 	//! base recursion cases in sub_maze can lead to arbitrarily complex mazes.
 	//! However that would require more design considerations, computations, and
 	//! the Robot size will have to get smaller to fit in the small gaps/holes
-	MAZE RandomMaze(c0, c1, c2, c3, 10);
+	MAZE RandomMaze(c0, c1, c2, c3, 11);
 
 	//! Populating the object members with a new randomly generated maze, using the aforementioned 
 	//! recursive methods. 
