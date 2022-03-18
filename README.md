@@ -39,7 +39,23 @@ The bash script performs the following:
 - Starts Enviro 
 
 ## Usage:
+The usage is fairly simple:
+1. After starting the project using the bash script, open `localhost`.
+2. You'll find a freshly generated maze on screen without robot: ![Sample maze](Screenshots/ss0.png)
+3. The robot is assigned an initial position based on `screen click`. Therefore click on an emtpy space in the maze.
+4. That's it! Watch the robot traverse the maze. If there is no path (with enough gap to go through) then the robot will backtrack to the initial starting point and stop. Or else it will escape the grid border and wait outside for a new screen click. 
+5. A new maze is generated everytime the bash script is run. Here are some sample "in action" screenshots: 
 
+![Sample Image](Screenshots/ss1.png)
+
+![Sample Image](Screenshots/ss2.png)
+
+![Sample Image](Screenshots/ss3.png)
+
+Note that it is possible to change the width and recursion depth in my maze generator to get arbitrarily complex mazes! 
+![Sample Image](Screenshots/ss4.png)
+
+However it takes more computation and occupies more memory to store. Moreover, the robot size needs to be shrunk to fit in the small gaps in the maze, which is not very pleasing to the eye. 
 
 ## References:
 All the code is original and written from scratch by me. I don't use any pre-built libraries or third-party code. However, the general algorithmic principles used are variations of popular literature:- 
