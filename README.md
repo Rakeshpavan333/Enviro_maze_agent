@@ -45,4 +45,5 @@ The bash script performs the following:
 All the code is original and written from scratch by me. I don't use any pre-built libraries or third-party code. However, the general algorithmic principles used are variations of popular literature:- 
 1. Recursive Division for Maze Generation [link](https://weblog.jamisbuck.org/2011/1/12/maze-generation-recursive-division-algorithm)
 2. DFS and BFS using Stacks and Queues [PDF](http://web.cs.unlv.edu/larmore/Courses/CSC477/bfsDfs.pdf)
-Also consulted [KlavinsLab GitHub](https://github.com/klavinslab), [Stackoverflow](https://stackoverflow.com/), and CPP language docs for some general syntaxes related debugging. 
+
+Also, consulted [KlavinsLab GitHub](https://github.com/klavinslab), [Stackoverflow](https://stackoverflow.com/), and CPP language docs for some general syntaxes related debugging. 
