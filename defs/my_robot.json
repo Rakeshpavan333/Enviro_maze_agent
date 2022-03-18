@@ -1,0 +1,60 @@
+{
+    "name": "MyRobot",
+    "type": "dynamic",
+    "description": "Maze Runner",
+    "shape": [
+        { "x": -4, "y": 4 },
+        { "x": 4, "y": 4 },
+        { "x": 4, "y": -4 },
+        { "x": -4, "y": -4 }
+    ],
+    "friction": {
+      "collision": 0,
+      "linear": 0,
+      "rotational": 0
+    },
+    "sensors": [
+        {
+            "type": "range",
+            "location": {"x": 0, "y": 3.75},
+            "direction": 0
+        },
+        {
+            "type": "range",
+            "location": {"x": 0, "y": -3.75},
+            "direction": 0
+        },
+        {
+            "type": "range",
+            "location": {"x": -3.75, "y": 0},
+            "direction": 1.570796
+        },
+        {
+            "type": "range",
+            "location": {"x": 3.75, "y": 0},
+            "direction": 1.570796
+        },
+        {
+            "type": "range",
+            "location": {"x": 0, "y": 3.75},
+            "direction": 3.14159
+        },
+        {
+            "type": "range",
+            "location": {"x": 0, "y": -3.75},
+            "direction": 3.14159
+        },
+        {
+            "type": "range",
+            "location": {"x": -3.75, "y": 0},
+            "direction": 4.71239
+        },
+        {
+            "type": "range",
+            "location": {"x": 3.75, "y": 0},
+            "direction": 4.71239
+        }
+    ],
+    "mass": 1,    
+    "controller": "lib/my_robot.so"
+}
