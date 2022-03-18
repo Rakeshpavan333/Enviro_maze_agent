@@ -8,8 +8,8 @@
    2. Designing a DFS algorithm without using recursion: Given how event management and process scheduling works in elma and enviro it is difficult to code a recursive DFS inside during() or any class method. Solved this efficiently by using the first-in-last-out data-structure (STL `stack`). The stack tracked the order in which nodes (i.e the robot position co-ordinates) get accessed and traversed in the maze. 
    3. Keeping tracking of the cells visited by the robot in the maze using a STL `map<>` container. 
    4. Effectively backtracking through dead ends (i.e leaf nodes) in linear time by using `stack` to track the order of entry of cells.  
-2. (Algorithm & design) Randomized divided & conquer for maze generation:
-   1. Recursively dividing the maze into smaller sub-regions or sub-spaces and processing each through a similar recursive subroutine. 
+2. (Algorithm & design) Randomized divided & conquer based maze generation:
+   1. Recursively dividing the empty region into smaller sub-regions and processing each through a similar recursive subroutine. 
    2. Using randomly generated vertical and horizontal axes to divide the region. Interpreting the axes as static agents (or walls). 
    3. Creating a randomized gap in each of the walls (or axis) to connect the divided sub-regions, to form a maze. 
 3. Implementation: 
@@ -38,8 +38,11 @@ The bash script performs the following:
 - Compiles the robot source codes through make
 - Starts Enviro 
 
-# Usage:
+## Usage:
 
 
-
+## References:
+All the code is original and written from scratch by me. I don't use any pre-built libraries or third-party code. However, the general algorithmic principles used are from popular literature:- 
+1. Recursive Division for Maze Generation (!link)[https://weblog.jamisbuck.org/2011/1/12/maze-generation-recursive-division-algorithm]
+2. DFS and BFS using Stacks and Queues (!link)[http://web.cs.unlv.edu/larmore/Courses/CSC477/bfsDfs.pdf]
 
