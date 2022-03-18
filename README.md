@@ -31,6 +31,7 @@ Briefly highlighting some important files:
 First start docker v1.2: 
 ```
 docker run -p80:80 -p8765:8765 -v $PWD:/source -it klavins/enviro:v1.2 bash
+esm start
 ```
 then run the shell script:
 ``` 
