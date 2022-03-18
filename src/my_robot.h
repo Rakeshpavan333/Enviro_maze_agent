@@ -6,6 +6,30 @@
 
 using namespace enviro;
 
+//! A useful class for converting direction to integer co-ordinate steps
+class Direction {
+    public:
+    Direction(char dir, int step_size){
+        if (dir == 'R'){
+            _dx = step_size; _dy = 0;
+        } else if (dir == 'L' ){
+            _dx = -step_size; _dy = 0;
+        } else if (dir == 'D'){
+            _dx = 0; _dy = -step_size;
+        } else if (dir == 'U'){
+            _dx = 0; _dy = step_size;
+        } else {
+            throw std::invalid_argument("Invalid Direction");
+        }
+    }
+    int dx() { return _dx; }
+    int dy() { return _dy; }
+
+    private: 
+    int _dx;
+    int _dy;
+};
+
 //! Controlling the robot movement. The DFS + Backtracking is implemented as a member function
 //! Inherits from Process and AgentInterace
 class MyRobotController : public Process, public AgentInterface {
@@ -140,30 +164,6 @@ class MyRobotController : public Process, public AgentInterface {
     //! A recursion stack the stores the order in which the positions 
     //! were accessed along the DFS. This helps in backtracking.
     std::stack<std::pair<int, int>> _rec_stack;
-};
-
-//! A useful class for converting direction to integer co-ordinate steps
-class Direction {
-    public:
-    Direction(char dir, int step_size){
-        if (dir == 'R'){
-            _dx = step_size; _dy = 0;
-        } else if (dir == 'L' ){
-            _dx = -step_size; _dy = 0;
-        } else if (dir == 'D'){
-            _dx = 0; _dy = -step_size;
-        } else if (dir == 'U'){
-            _dx = 0; _dy = step_size;
-        } else {
-            throw std::invalid_argument("Invalid Direction");
-        }
-    }
-    int dx() { return _dx; }
-    int dy() { return _dy; }
-
-    private: 
-    int _dx;
-    int _dy;
 };
 
 //! Main Robot class that inherits from the Agent class. The controller is a private 
