@@ -55,7 +55,7 @@ The usage is fairly simple:
 Note that it is possible to change the width and recursion depth in my maze generator code (`maze_gen.cc`) to get arbitrarily complex mazes! 
 ![Sample Image](Screenshots/ss4.png)
 
-However it takes more computation and occupies more memory to store. Moreover, the robot size needs to be shrunk to fit in the small gaps in the maze, which is not very pleasing to the eye. 
+However, it takes more computation and occupies more memory to store. Moreover, the robot size needs to be manually adjusted to fit in the small gaps in the maze, which is not very pleasing to the eye.
 
 ## References:
 All the code is original and written from scratch by me. I don't use any pre-built libraries or third-party code. However, the general algorithmic principles used are variations of popular literature:- 
