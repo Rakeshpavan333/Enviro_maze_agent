@@ -22,7 +22,7 @@ I did not get the time to catalogue all the bugs and issues I face during the im
 
 ## File structure & hierarchy:
 Briefly highlighting some important files:
-- I have define and implement various modules used for generating the randomized maze in the files `maze_gen.h` and  `maze_gen.cc`. The maze is then converted to json and written into the `config.json` file using the `update_enviro_config()` method in the MAZE class.
+- I have define and implement various modules used for generating the randomized maze in the files `maze_gen.h` and  `maze_gen.cc`. The maze is converted to json and written into the `config.json` file in the `update_enviro_config()` method in the MAZE class.
 - `run.sh` is used to start the project 
 - `src/my_robot.h` used to implement the Robot controller (DFS + Backtracking). 
 
