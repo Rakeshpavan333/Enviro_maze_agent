@@ -1,5 +1,5 @@
 # Maze Generation & Solving 
-- A randomized maze generator using a divide & conquer algorithmic paradigm.
+- A randomized maze generator using a divide & conquer algorithmic paradigm (recursive division).
 - A dynamic agent (robot) that uses effective backtracking + depth-first-search (DFS) to solve the maze. 
 
 ## Key challenges & highlights:
