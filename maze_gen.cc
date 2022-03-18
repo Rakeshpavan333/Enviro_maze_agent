@@ -169,7 +169,7 @@ int main(){
 	//! The border co-ordinates. This is hardcoded for convenience
 	point c0(-340, -190), c1(340, -190), c2(340, 190), c3(-340, 190);
 
-	//! Instantiating a new MAZE object with a width of 10. 
+	//! Instantiating a new MAZE object with a fixed wall width. 
 	//! Using a lower width value with lower thresholds for 
 	//! base recursion cases in sub_maze can lead to arbitrarily complex mazes.
 	//! However that would require more design considerations, computations, and
