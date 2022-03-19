@@ -14,7 +14,7 @@
    3. Creating a randomized gap in each of the walls (or axis) to connect the divided sub-regions, to form a maze. 
 3. Implementation: 
    1. Working with integer aproximations of the robot locations. Storing and handling the state space (in maps and stacks) would be too large to handle if we consider all the possible floating point values too. 
-   2. Calculating closed polygon points inside the divide & conquer to represent static agents in a format the enviro expects. 
+   2. Calculating closed polygon points inside the recursive division to represent static agent shapes in a format the enviro expects. 
    3. Integrating DFS+Backtracking and Divide & Conquer paradigms as processes in enviro. 
    4. Converting the generated maze to json and writing to the `config.json` file that enviro renders on screen. 
 
