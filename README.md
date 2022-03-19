@@ -63,7 +63,7 @@ Note that it is possible to change the width and recursion depth in my maze gene
 However, it takes more computation and occupies more memory to store. Moreover, the robot size needs to be manually adjusted to fit in the small gaps in the maze, which is not very pleasing to the eye. I will upload more screenshots and videos (possibly) if time permits. 
 
 ## References:
-All the code is original and written from scratch by me. I don't use any pre-built libraries or third-party code. However, the general algorithmic principles used are variations of popular literature:- 
+All the code is original and written from scratch by me. I don't use any pre-built libraries or third-party code, other than json, enviro, and c++ stl. However, the general algorithmic principles used are variations of popular literature:- 
 1. Recursive Division for Maze Generation [link](https://weblog.jamisbuck.org/2011/1/12/maze-generation-recursive-division-algorithm)
 2. DFS and BFS using Stacks and Queues [PDF](http://web.cs.unlv.edu/larmore/Courses/CSC477/bfsDfs.pdf)
 
