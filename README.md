@@ -1,4 +1,4 @@
-# Maze Generation & Solving 
+# Maze Generation & Solving (C++)
 - A randomized maze generator using a divide & conquer algorithmic paradigm (recursive division).
 - A dynamic agent (robot) that uses effective backtracking + depth-first-search (DFS) to solve the maze. 
 
